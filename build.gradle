@@ -1,0 +1,47 @@
+apply plugin: "java"
+apply plugin: 'eclipse'
+//apply plugin: 'application'
+apply plugin: 'idea'
+
+group = theGroup
+
+sourceCompatibility = theSourceCompatibility
+version = theVersion
+
+//mainClassName = 'main.Boot'
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': group, 'Implementation-Version': version
+    //    attributes 'Main-Class': 'main.Boot'
+    }
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven{
+      url "http://maven.imagej.net/content/groups/public"
+    }
+}
+
+
+dependencies {
+
+    // scifio
+    compile group: 'io.scif', name: 'scifio', version: '0.17.3-PERF-SNAPSHOT'
+    compile group: 'junit', name: 'junit', version: '4.+'
+
+    // Only needed for the tests
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+
+}
+
+// test {
+//     systemProperties 'property': 'value'
+// }
+
+// No need to install gradle
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.2.1'
+}
