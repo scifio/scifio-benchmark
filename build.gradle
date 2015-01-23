@@ -29,7 +29,9 @@ repositories {
 dependencies {
 
     // scifio
-    compile group: 'io.scif', name: 'scifio', version: '0.17.3-PERF-SNAPSHOT'
+   // compile group: 'io.scif', name: 'scifio', version: '0.17.3-PERF-SNAPSHOT'
+    compile group: 'io.scif', name: 'scifio', version: '0.19.1-SNAPSHOT'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.7'
     compile group: 'junit', name: 'junit', version: '4.+'
 
     // Only needed for the tests
