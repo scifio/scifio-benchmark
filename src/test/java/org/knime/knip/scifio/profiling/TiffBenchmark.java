@@ -14,14 +14,23 @@ import net.imglib2.exception.IncompatibleTypeException;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.TestRule;
 import org.scijava.util.FileUtils;
 
+import com.carrotsearch.junitbenchmarks.BenchmarkOptions;
+import com.carrotsearch.junitbenchmarks.BenchmarkRule;
+
+@BenchmarkOptions(benchmarkRounds = 20, warmupRounds = 5)
 public class TiffBenchmark {
+
+	/** Needed for JUnit-Benchmarks */
+	@Rule
+	public TestRule benchmarkRun = new BenchmarkRule();
 
 	private static final String IMG1 = "/FakeTracks.tif";
 	private static final String BASENAME = "write_";
-	private static final int NUM_WRITES = 300;
 
 	private File baseDirectory;
 
@@ -51,54 +60,42 @@ public class TiffBenchmark {
 	public void tiffNaiveTest() throws ImgIOException,
 			IncompatibleTypeException, FormatException {
 
-		for (int i = 0; i < NUM_WRITES; i++) {
-			m_saver.saveImg(new File(baseDirectory, BASENAME + i + ".tif").getPath(), m_sfimg);
-		}
+		m_saver.saveImg(new File(baseDirectory, BASENAME + ".tif").getPath(), m_sfimg);
 	}
 
 	@Test
 	public void pngNaiveTest() throws ImgIOException,
 			IncompatibleTypeException, FormatException {
 
-		for (int i = 0; i < NUM_WRITES; i++) {
-			m_saver.saveImg(new File(baseDirectory, BASENAME + i + ".png").getPath(), m_sfimg);
-		}
+		m_saver.saveImg(new File(baseDirectory, BASENAME + ".png").getPath(), m_sfimg);
 	}
 
 	@Test
 	public void epsNaiveTest() throws ImgIOException,
 			IncompatibleTypeException, FormatException {
 
-		for (int i = 0; i < NUM_WRITES; i++) {
-			m_saver.saveImg(new File(baseDirectory, BASENAME + i + ".eps").getPath(), m_sfimg);
-		}
+		m_saver.saveImg(new File(baseDirectory, BASENAME + ".eps").getPath(), m_sfimg);
 	}
 
 	@Test
 	public void icsNaiveTest() throws ImgIOException,
 			IncompatibleTypeException, FormatException {
 
-		for (int i = 0; i < NUM_WRITES; i++) {
-			m_saver.saveImg(new File(baseDirectory, BASENAME + i + ".ics").getPath(), m_sfimg);
-		}
+		m_saver.saveImg(new File(baseDirectory, BASENAME + ".ics").getPath(), m_sfimg);
 	}
 
 	@Test
 	public void jpgNaiveTest() throws ImgIOException,
 			IncompatibleTypeException, FormatException {
 
-		for (int i = 0; i < NUM_WRITES; i++) {
-			m_saver.saveImg(new File(baseDirectory, BASENAME + i + ".jpg").getPath(), m_sfimg);
-		}
+		m_saver.saveImg(new File(baseDirectory, BASENAME + ".jpg").getPath(), m_sfimg);
 	}
 
 //	@Test
 //	public void jp2NaiveTest() throws ImgIOException,
 //			IncompatibleTypeException, FormatException {
 //
-//		for (int i = 0; i < NUM_WRITES; i++) {
-//			m_saver.saveImg(BASEFOLDER + BASENAME + i + ".jp2", m_sfimg);
-//		}
+//		m_saver.saveImg(BASEFOLDER + BASENAME + ".jp2", m_sfimg);
 //	}
 
 }

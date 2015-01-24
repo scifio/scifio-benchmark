@@ -60,6 +60,12 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- JUnit dependencies -->
+		<dependency>
+			<groupId>org.scijava</groupId>
+			<artifactId>junit-benchmarks</artifactId>
+			<scope>test</scope>
+		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
