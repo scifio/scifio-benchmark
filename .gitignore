@@ -1,10 +1,11 @@
-/bin/
-/gradle/
-/build/
-.classpath
-.project
+# Maven *
+/target/
+
+# Eclipe #
+/.classpath
+/.project
 /.settings/
-benchmarking.iml
-/writetest/target/
-/.gradle/
+
+# IDEA #
+/benchmarking.iml
 /.idea/
