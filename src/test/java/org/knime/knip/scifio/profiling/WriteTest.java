@@ -53,7 +53,7 @@ import com.carrotsearch.junitbenchmarks.BenchmarkOptions;
 import com.carrotsearch.junitbenchmarks.BenchmarkRule;
 
 @BenchmarkOptions(benchmarkRounds = 20, warmupRounds = 5)
-public class TiffBenchmark {
+public class WriteTest {
 
 	/** Needed for JUnit-Benchmarks */
 	@Rule
