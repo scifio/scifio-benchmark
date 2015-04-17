@@ -1,0 +1,14 @@
+	
+ics_version	1.0
+filename	write_.ids
+layout	parameters	6
+layout	order	bits	x	y	t	
+layout	sizes	8	128	128	50	0	0	
+representation	format	integer
+representation	sign	unsigned
+representation	compression	uncompressed
+representation	byte_order	1	
+parameter	scale	1.000000	128	128	50	
+parameter	units	bits	um	um	null	
+
+end

@@ -56,7 +56,8 @@
 		<!-- SCIFIO dependencies -->
 		<dependency>
 			<groupId>io.scif</groupId>
-			<artifactId>scifio</artifactId>
+			<artifactId>scifio-test</artifactId>
+			<version>0.20.1</version>
 			<scope>test</scope>
 		</dependency>
 

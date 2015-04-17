@@ -1,0 +1,19 @@
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.knime.knip.scifio.profiling.WriteTest
+WriteTest.icsNaiveTest: [measured 200 out of 205 rounds, threads: 1 (sequential)]
+ round: 0.02 [+- 0.01], round.block: 0.00 [+- 0.00], round.gc: 0.00 [+- 0.00], GC.calls: 7, GC.time: 0.07, time.total: 3.62, time.warmup: 0.24, time.bench: 3.37
+WriteTest.jpgNaiveTest: [measured 200 out of 205 rounds, threads: 1 (sequential)]
+ round: 0.01 [+- 0.00], round.block: 0.00 [+- 0.00], round.gc: 0.00 [+- 0.00], GC.calls: 1, GC.time: 0.00, time.total: 1.46, time.warmup: 0.16, time.bench: 1.29
+WriteTest.pngNaiveTest: [measured 200 out of 205 rounds, threads: 1 (sequential)]
+ round: 0.06 [+- 0.01], round.block: 0.00 [+- 0.00], round.gc: 0.00 [+- 0.00], GC.calls: 8, GC.time: 0.02, time.total: 12.79, time.warmup: 0.53, time.bench: 12.26
+WriteTest.epsNaiveTest: [measured 200 out of 205 rounds, threads: 1 (sequential)]
+ round: 0.01 [+- 0.00], round.block: 0.00 [+- 0.00], round.gc: 0.00 [+- 0.00], GC.calls: 3, GC.time: 0.01, time.total: 1.26, time.warmup: 0.04, time.bench: 1.22
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.652 sec - in org.knime.knip.scifio.profiling.WriteTest
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
