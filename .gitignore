@@ -9,4 +9,5 @@
 # IDEA #
 /benchmarking.iml
 /.idea/
+*.iml
 /bin/
