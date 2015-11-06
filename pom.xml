@@ -74,7 +74,6 @@
 			<groupId>io.scif</groupId>
 			<artifactId>scifio</artifactId>
 			<scope>test</scope>
-			<version>0.23.1</version>
 		</dependency>
 
 		<dependency>
