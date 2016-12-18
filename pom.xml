@@ -4,17 +4,30 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<artifactId>pom-scifio</artifactId>
-		<version>RELEASE</version>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>12.0.0</version>
 		<relativePath />
-		<groupId>io.scif</groupId>
 	</parent>
 
+	<groupId>io.scif</groupId>
 	<artifactId>scifio-benchmarks</artifactId>
 	<version>0.2.0-SNAPSHOT</version>
 
 	<name>SCIFIO benchmark tests</name>
 	<description>Performance and memory benchmarks for scifio.</description>
+	<url>http://imagej.net/SCIFIO_benchmark_tests</url>
+	<inceptionYear>2011</inceptionYear>
+	<organization>
+		<name>SCIFIO</name>
+		<url>http://scif.io/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Simplified BSD License</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
 	<developers>
 		<developer>
@@ -50,6 +63,13 @@
 		</contributor>
 	</contributors>
 
+	<mailingLists>
+		<mailingList>
+			<name>ImageJ Forum</name>
+			<archive>http://forum.imagej.net/</archive>
+		</mailingList>
+	</mailingLists>
+
 	<scm>
 		<connection>scm:git:git://github.com/scifio/scifio-benchmark</connection>
 		<developerConnection>scm:git:git://github.com/scifio/scifio-benchmark</developerConnection>
@@ -66,6 +86,10 @@
 	</ciManagement>
 
 	<properties>
+		<license.licenseName>bsd_2</license.licenseName>
+		<license.copyrightOwners>Board of Regents of the University of
+Wisconsin-Madison</license.copyrightOwners>
+		<license.projectName>SCIFIO library for reading and converting scientific file formats.</license.projectName>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jmh.version>1.9.2</jmh.version>
 		<javac.target>1.7</javac.target>
