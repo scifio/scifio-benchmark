@@ -12,7 +12,6 @@
 
 	<artifactId>scifio-benchmarks</artifactId>
 	<version>0.2.0-SNAPSHOT</version>
-	<packaging>jar</packaging>
 
 	<name>SCIFIO benchmark tests</name>
 	<description>Performance and memory benchmarks for scifio.</description>
@@ -50,10 +49,6 @@
 			<properties><id>dscho</id></properties>
 		</contributor>
 	</contributors>
-
-	<prerequisites>
-		<maven>3.0</maven>
-	</prerequisites>
 
 	<scm>
 		<connection>scm:git:git://github.com/scifio/scifio-benchmark</connection>
@@ -103,12 +98,10 @@
 		<dependency>
 			<groupId>net.imagej</groupId>
 			<artifactId>ij</artifactId>
-			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.imagej</groupId>
 			<artifactId>imagej-common</artifactId>
-			<scope>compile</scope>
 		</dependency>
 
 		<!-- SCIFIO dependencies -->
@@ -122,60 +115,5 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 		</dependency>
-
 	</dependencies>
-
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<artifactId>maven-clean-plugin</artifactId>
-					<version>2.5</version>
-				</plugin>
-				<plugin>
-					<artifactId>maven-deploy-plugin</artifactId>
-					<version>2.8.1</version>
-				</plugin>
-				<plugin>
-					<artifactId>maven-install-plugin</artifactId>
-					<version>2.5.1</version>
-				</plugin>
-				<plugin>
-					<artifactId>maven-jar-plugin</artifactId>
-					<version>2.4</version>
-				</plugin>
-				<plugin>
-					<artifactId>maven-javadoc-plugin</artifactId>
-					<version>2.9.1</version>
-				</plugin>
-				<plugin>
-					<artifactId>maven-resources-plugin</artifactId>
-					<version>2.6</version>
-				</plugin>
-				<plugin>
-					<artifactId>maven-site-plugin</artifactId>
-					<version>3.3</version>
-				</plugin>
-				<plugin>
-					<artifactId>maven-source-plugin</artifactId>
-					<version>2.2.1</version>
-				</plugin>
-				<plugin>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.17</version>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<compilerVersion>${javac.target}</compilerVersion>
-					<source>${javac.target}</source>
-					<target>${javac.target}</target>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 </project>
