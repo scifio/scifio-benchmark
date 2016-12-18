@@ -17,6 +17,40 @@
 	<name>SCIFIO benchmark tests</name>
 	<description>Performance and memory benchmarks for scifio.</description>
 
+	<developers>
+		<developer>
+			<id>gab1one</id>
+			<name>Gabriel Einsdorf</name>
+			<url>http://imagej.net/User:Gab1one</url>
+			<roles>
+				<role>founder</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>ctrueden</id>
+			<name>Curtis Rueden</name>
+			<url>http://imagej.net/User:Rueden</url>
+			<roles>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>Mark Hiner</name>
+			<url>http://imagej.net/User:Hinerm</url>
+			<properties><id>hinerm</id></properties>
+		</contributor>
+		<contributor>
+			<name>Johannes Schindelin</name>
+			<url>http://imagej.net/User:Schindelin</url>
+			<properties><id>dscho</id></properties>
+		</contributor>
+	</contributors>
+
 	<prerequisites>
 		<maven>3.0</maven>
 	</prerequisites>
