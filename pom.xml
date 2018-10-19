@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava</artifactId>
-		<version>12.0.0</version>
+		<version>23.2.0</version>
 		<relativePath />
 	</parent>
 
@@ -90,7 +90,6 @@
 		<license.copyrightOwners>Board of Regents of the University of
 Wisconsin-Madison</license.copyrightOwners>
 		<license.projectName>SCIFIO library for reading and converting scientific file formats.</license.projectName>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jmh.version>1.9.2</jmh.version>
 		<javac.target>1.7</javac.target>
 		<uberjar.name>benchmarks</uberjar.name>
@@ -119,20 +118,17 @@ Wisconsin-Madison</license.copyrightOwners>
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- SCIFIO dependencies -->
+		<!-- Test scope dependencies -->
 		<dependency>
 			<groupId>io.scif</groupId>
 			<artifactId>scifio</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		<!-- SciJava dependencies -->
 		<dependency>
 			<groupId>org.scijava</groupId>
 			<artifactId>scijava-common</artifactId>
 			<scope>test</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
