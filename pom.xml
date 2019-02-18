@@ -16,7 +16,7 @@
 
 	<name>SCIFIO benchmark tests</name>
 	<description>Performance and memory benchmarks for scifio.</description>
-	<url>http://imagej.net/SCIFIO_benchmark_tests</url>
+	<url>https://imagej.net/SCIFIO_benchmark_tests</url>
 	<inceptionYear>2011</inceptionYear>
 	<organization>
 		<name>SCIFIO</name>
@@ -33,7 +33,7 @@
 		<developer>
 			<id>gab1one</id>
 			<name>Gabriel Einsdorf</name>
-			<url>http://imagej.net/User:Gab1one</url>
+			<url>https://imagej.net/User:Gab1one</url>
 			<roles>
 				<role>founder</role>
 				<role>debugger</role>
@@ -44,7 +44,7 @@
 		<developer>
 			<id>ctrueden</id>
 			<name>Curtis Rueden</name>
-			<url>http://imagej.net/User:Rueden</url>
+			<url>https://imagej.net/User:Rueden</url>
 			<roles>
 				<role>maintainer</role>
 			</roles>
@@ -53,12 +53,12 @@
 	<contributors>
 		<contributor>
 			<name>Mark Hiner</name>
-			<url>http://imagej.net/User:Hinerm</url>
+			<url>https://imagej.net/User:Hinerm</url>
 			<properties><id>hinerm</id></properties>
 		</contributor>
 		<contributor>
 			<name>Johannes Schindelin</name>
-			<url>http://imagej.net/User:Schindelin</url>
+			<url>https://imagej.net/User:Schindelin</url>
 			<properties><id>dscho</id></properties>
 		</contributor>
 	</contributors>
@@ -99,7 +99,7 @@ Wisconsin-Madison</license.copyrightOwners>
 		<!-- NB: for SciJava dependencies -->
 		<repository>
 			<id>imagej.public</id>
-			<url>http://maven.imagej.net/content/groups/public</url>
+			<url>https://maven.imagej.net/content/groups/public</url>
 		</repository>
 	</repositories>
 
