@@ -70,8 +70,8 @@
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:git://github.com/scifio/scifio-benchmark</connection>
-		<developerConnection>scm:git:git://github.com/scifio/scifio-benchmark</developerConnection>
+		<connection>scm:git:https://github.com/scifio/scifio-benchmark</connection>
+		<developerConnection>scm:git:https://github.com/scifio/scifio-benchmark</developerConnection>
 		<tag>HEAD</tag>
 		<url>https://github.com/scifio/scifio-benchmark</url>
 	</scm>
